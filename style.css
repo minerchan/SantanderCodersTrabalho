@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&family=Dancing+Script:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* Isso aqui é para ficar 10px de fonte como referência */
+}
+
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.2rem;
+}
+body {
+  box-sizing: border-box;
+  background-color: white;
+}
