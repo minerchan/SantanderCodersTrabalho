@@ -20,6 +20,9 @@ body {
   background-color: white;
 }
 
+.fixFont {
+  font-size: 3.2rem;
+}
 .hoverOrange:hover {
   color: #ffbe33 !important;
   cursor: pointer;
@@ -30,15 +33,28 @@ body {
 .fixh {
   height: 8.4rem !important;
 }
-/* .fixRelative {
-  position: relative;
-} */
 .fixTop {
-  top: 40%;
+  top: 35%;
+}
+.fixIndicator {
+  width: fit-content;
+  left: 0;
+  margin: 0 !important;
+  top: 35%;
 }
 .fixPaddingR {
-  padding-right: 75rem;
+  padding-right: 60rem;
 }
 .container {
   max-width: 1170px;
+}
+.carousel-indicators button {
+  border-radius: 50%;
+  height: 1.2rem !important;
+  width: 1.2rem !important;
+}
+.carousel-indicators .active {
+  height: 2rem !important;
+  width: 2rem !important;
+  background-color: #ffbe33;
 }
