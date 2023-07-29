@@ -9,12 +9,14 @@
 }
 
 html {
-  font-size: 62.5%; /* Isso aqui é para ficar 10px de fonte como referência */
+  font-size: 62.5%;
+  /* Isso aqui é para ficar 10px de fonte como referência */
 }
 
 .ourFont {
   font-family: "Dancing Script", cursive;
 }
+
 body {
   box-sizing: border-box;
   background-color: white;
@@ -24,21 +26,77 @@ body {
   color: #ffbe33 !important;
   cursor: pointer;
 }
+
 .galeria {
   height: calc(100vh - 10.4rem);
 }
+
 .fixh {
   height: 8.4rem !important;
 }
+
 /* .fixRelative {
   position: relative;
 } */
 .fixTop {
   top: 40%;
 }
+
 .fixPaddingR {
   padding-right: 75rem;
 }
+
 .container {
   max-width: 1170px;
+}
+
+
+/* ANA */
+
+/* Necessário dar replace em ourFont para esta classe */
+.font-custom {
+  font-family: "Dancing Script", cursive;
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.detail-box-item {
+  background-color: #222831;
+  color: white;
+  padding: 25px 25px 15px 25px;
+  border-radius: 5px;
+}
+
+.img-box-item {
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  margin-top: 30px;
+}
+
+.img-box {
+  border-radius: 100%;
+  border: 5px solid #ffbe33;
+}
+
+.footer {
+  background-color: #222831;
+}
+
+.footer-icon {
+  padding: 15px 10px;
+}
+
+.detail-box-item p,
+footer p,
+footer li span
+ {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
 }
