@@ -70,6 +70,33 @@ body {
   background-color: #ffbe33;
 }
 
+
+/* Octávio */
+.setbg{
+  background-color:#222831;
+  padding: 9rem 0;
+}
+
+.fix-img{
+  max-width: 44.5rem;
+}
+
+.fix-p{
+  max-width: 55.5rem;
+  font-size: 1.65rem;
+}
+
+.font-ajust {
+  font-size: 3.85rem;
+}
+
+.margin-ajust {
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+/* Fim CSS Octávio */
+
 /* A PARTIR DAQUI ANA */
 
 .form-container {
