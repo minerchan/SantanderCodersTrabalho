@@ -50,8 +50,10 @@ body {
   top: 35%;
 }
 
-.fixPaddingR {
-  padding-right: 60rem;
+@media  (min-width: 768px) {
+  .fixPaddingR {
+    padding-right: 50% !important;
+  }
 }
 
 .container {
