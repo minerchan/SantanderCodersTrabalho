@@ -12,11 +12,33 @@ html {
   font-size: 62.5%; /* Isso aqui é para ficar 10px de fonte como referência */
 }
 
-.navbar-brand {
+.ourFont {
   font-family: "Dancing Script", cursive;
-  font-size: 3.2rem;
 }
 body {
   box-sizing: border-box;
   background-color: white;
+}
+
+.hoverOrange:hover {
+  color: #ffbe33 !important;
+  cursor: pointer;
+}
+.galeria {
+  height: calc(100vh - 10.4rem);
+}
+.fixh {
+  height: 8.4rem !important;
+}
+/* .fixRelative {
+  position: relative;
+} */
+.fixTop {
+  top: 40%;
+}
+.fixPaddingR {
+  padding-right: 75rem;
+}
+.container {
+  max-width: 1170px;
 }

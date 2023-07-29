@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/favicon.png"/>
+    <link rel="icon" href="./assets/favicon.png" />
     <title>Feane</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -13,118 +13,112 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="container">
-    <img
-      src="./assets/background.jpg"
-      alt="Foto de hamburguer e batata"
-      class="position-absolute top-0 start-0 w-100"
-    />
-    <header>
-      <nav class="navbar navbar-dark navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand text-white" href="#">Feane</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase d-flex justify-content-center w-100 fs-3 gap-4"
-            >
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-warning"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white">Book table</a>
-              </li>
-            </ul>
-            <div class="d-flex align-items-center">
-              <span class="fa-solid fa-user text-white px-3 fs-3"></span>
-              <span
-                class="fa-solid fa-cart-shopping text-white px-3 fs-3"
-              ></span>
-              <span
-                class="fa-solid fa-magnifying-glass text-white px-3 fs-3"
-              ></span>
-
-              <form class="d-flex" role="search">
-                <button
-                  class="text-nowrap btn btn-warning rounded-pill btn-lg px-5 fs-3 text-white"
-                  type="submit"
-                >
-                  Order Online
-                </button>
-              </form>
+  <body>
+    <div class="position-relative min-vh-100 d-flex flex-column">
+      <img src="./assets/background.jpg" alt="Foto de hamburguer e batata"
+        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
+      <header class="py-3 container">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-transparent fixh">
+          <div class="container-fluid h-100">
+            <a class="navbar-brand text-white ourFont display-1" href="#">Feane</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-3 mb-lg-0 text-uppercase d-flex justify-content-center w-100 fs-3 gap-4 text-center">
+                <li class="nav-item">
+                  <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-white hoverOrange" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hoverOrange" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white hoverOrange" href="#">Book table</a>
+                </li>
+              </ul>
+              <div class="d-flex align-items-center justify-content-center">
+                <span class="fa-solid fa-user text-white px-3 fs-3 hoverOrange"></span>
+                <span class="fa-solid fa-cart-shopping text-white px-3 fs-3 hoverOrange"></span>
+                <span class="fa-solid fa-magnifying-glass text-white px-3 fs-3 hoverOrange"></span>
+  
+                <form class="d-flex" role="search">
+                  <button class="text-nowrap btn btn-warning rounded-pill btn-lg px-5 fs-3 text-white" type="submit">
+                    Order Online
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
+        </nav>
+      </header>
+      <section class="container position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide galeria">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner position-absolute fixTop translate-middle-y fixPaddingR">
+            <div class="carousel-item active d-flex flex-column gap-2 text-white">
+              <!-- <img src="..." class="d-block w-100" alt="..." /> -->
+              <h1 class="ourFont display-1">Fast Food Restaurant</h1>
+              <p class="fs-4">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+              <button class="text-nowrap btn btn-warning rounded-pill btn-lg px-3 ps-3 w-25 fs-3 text-white">Order Now</button>
+            </div>
+            <div class="carousel-item">
+              
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </nav>
-    </header>
+      </section>
+    </div>
+    <section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, adipisci exercitationem laboriosam dolores eveniet ducimus ab ipsum earum repellendus dicta voluptates, possimus numquam suscipit est quis architecto delectus totam aperiam. Ex odit explicabo deleniti fugit modi cumque accusantium, rerum facere, temporibus aliquam sapiente blanditiis aperiam error dolores dolorem omnis ipsum culpa! Eligendi, optio corporis illum soluta dolorem perspiciatis nisi recusandae debitis voluptatibus veniam quos iure omnis pariatur repellendus doloremque ab culpa itaque! Esse modi porro, velit aliquid accusamus nulla vitae ipsam, et voluptates officia similique libero sunt accusantium quis ducimus laudantium facere impedit iste. Nostrum ullam nemo rem, similique ad nam! Provident inventore ullam labore, nisi aliquid voluptatibus, quis unde enim velit qui commodi nulla tempora consequuntur dicta odit assumenda eius aliquam corrupti quas id laborum impedit voluptas repudiandae! Rerum dolorem nemo facere esse ducimus illum beatae nihil autem, quia, aliquid officia voluptatum sequi velit sint earum? Dicta, quas animi quo cum accusamus numquam ipsam aperiam ratione dolore, deleniti culpa sunt neque adipisci, ullam modi possimus doloremque. Assumenda perspiciatis atque laboriosam accusamus quibusdam ratione officiis perferendis temporibus! Fugiat suscipit eum nesciunt. Laudantium quos necessitatibus, beatae quae dolores unde porro illum dolor quidem illo obcaecati atque suscipit repellendus perspiciatis! Qui perspiciatis placeat deleniti eveniet sed eius similique dicta at. Suscipit voluptas doloribus ipsa molestias ab ullam excepturi accusantium! Cumque ut aliquid aspernatur similique ratione animi sit dignissimos quas illo non, doloribus quos velit at sequi odit nihil dicta delectus omnis porro? Neque tempora deserunt obcaecati aut hic consequatur praesentium dolore nam minima. Minus eum eveniet vero molestias sunt ducimus similique consequatur, ipsa impedit laudantium beatae modi? Cumque dolorum, doloribus id, itaque nisi ab quod, consequuntur facilis corporis earum officiis necessitatibus eveniet consectetur quos ad distinctio quidem vero. Ullam, sit. Fuga culpa sed accusamus aperiam. Modi iure autem sapiente temporibus aperiam commodi, enim doloribus aliquam earum explicabo labore suscipit velit sint laborum, animi reiciendis laboriosam distinctio ad, dicta at totam ipsa asperiores ullam quidem! Dolorum ratione maxime omnis commodi. Eligendi accusamus, doloremque, nostrum perferendis optio nihil impedit praesentium maxime quisquam, rerum quae quibusdam quaerat voluptate? Commodi est illum laborum ab fuga. Iure sequi hic laboriosam at tempora similique ab libero quos voluptatibus reprehenderit sapiente, porro corporis sit unde, nisi magnam nihil minus omnis voluptates nostrum culpa eligendi voluptas! Quisquam iusto aliquam unde tempora, eveniet rerum quaerat nulla totam dicta temporibus illum sint, obcaecati reprehenderit possimus cupiditate ex mollitia fugiat, autem quas quod. Libero blanditiis recusandae doloremque possimus illo? Corporis aperiam nesciunt distinctio, qui minus ipsum animi? Ab temporibus et quaerat quidem illum aut perferendis, perspiciatis maxime saepe quam velit laboriosam quisquam aperiam ut veniam, recusandae distinctio veritatis nulla, minima ducimus! Numquam aliquam maxime obcaecati consectetur minus itaque! Ex doloremque facere provident corrupti inventore nemo reprehenderit est odit quo at, similique commodi dolores. Debitis quae voluptatum facilis adipisci corrupti consectetur quo minus accusamus recusandae possimus! Hic ipsa animi voluptate ipsam. Qui iure reiciendis dicta, veniam quaerat eligendi cumque quas delectus ducimus optio, sit quo maiores perferendis, accusamus officia fugit aut? Tenetur beatae labore sit ea, cum nobis. Repudiandae quam molestias nostrum saepe itaque expedita magnam nulla quisquam, dolorum eaque. Ipsum consectetur officia, omnis perspiciatis odit corrupti neque voluptatum rerum atque voluptatibus vitae? Nobis aliquam id deserunt architecto praesentium fugiat delectus dolore minima pariatur quos expedita molestias accusamus repellendus esse ratione nam inventore quis iure impedit, soluta a corrupti. Earum fugiat placeat impedit, possimus delectus blanditiis, consequuntur molestias quasi amet eius maiores excepturi, iste asperiores sunt exercitationem vitae ea officia? Harum consequatur quos est dignissimos repellat sapiente quae distinctio, quisquam ratione inventore sint consectetur molestiae suscipit quasi aliquid corrupti ipsam, libero autem! Commodi deleniti dolor vitae facilis temporibus laborum deserunt magnam facere similique, dolores ipsa, nesciunt quam reprehenderit, veritatis amet quia voluptates nisi? Itaque, officia nam deserunt natus alias minima recusandae. Soluta, illo perferendis. Esse, alias! Libero accusantium placeat rerum quam assumenda? Repellendus pariatur sunt sapiente blanditiis, voluptas facilis deleniti eius aperiam deserunt laborum ea et accusamus architecto veritatis sed? Ipsum nemo at facilis quaerat amet fugit molestias laudantium dolor adipisci facere, voluptatem totam nulla minus pariatur. Dolorem minus voluptate, quae odit voluptates neque pariatur iure ab quam atque recusandae consequatur rem commodi aperiam assumenda illo provident! Fugit, inventore maiores! Laboriosam inventore nihil similique, in non quos eos quo perferendis id illum vitae enim repellat ducimus beatae at minima unde sunt labore corrupti a. Sit, eligendi molestias voluptatum quia dolores assumenda, illum provident soluta necessitatibus similique adipisci. Molestiae, similique quia accusantium dolorem, fugiat exercitationem quisquam soluta est incidunt eveniet amet inventore modi dolore deserunt voluptas unde quo ad ea atque! Non qui error repellendus consectetur ab dolore! Ipsum quas eum voluptate non dolorum totam voluptatibus natus dolore voluptatem, aspernatur incidunt eos reprehenderit. Officia distinctio quia asperiores cum quibusdam commodi! Laborum eveniet possimus vitae aliquam nam. Excepturi cupiditate deserunt aut ipsum laboriosam sequi praesentium neque hic consequuntur dicta reprehenderit, aliquid qui atque. Voluptatibus, error dolores id asperiores corporis nisi optio, tempore perferendis perspiciatis quo quisquam veniam nemo molestiae officia dignissimos magni, dicta pariatur. Magni nemo assumenda facere ratione debitis cum quae delectus optio molestiae voluptates hic rerum sapiente culpa illo, explicabo similique nulla nam laboriosam eligendi at accusamus amet in quam nesciunt? Quas odit est in vel exercitationem quia facilis repudiandae, consequatur cupiditate possimus nemo! Aut ut perspiciatis, eius nisi placeat tenetur vitae unde incidunt dolorem tempore necessitatibus ea quam commodi excepturi nobis odio accusamus distinctio doloremque quo quae, molestiae obcaecati ratione maxime? Neque maxime quia suscipit doloremque. A, neque illo praesentium beatae quia nihil! Magnam, nobis. Molestias aspernatur quaerat, asperiores aliquam distinctio similique delectus accusantium iusto quasi, atque in debitis temporibus ratione dolore. Alias accusantium repellat, culpa, laborum hic quae ab nam velit corporis recusandae placeat aperiam voluptas blanditiis qui perferendis. Harum assumenda laboriosam adipisci cumque provident! Nostrum veritatis unde est molestiae delectus distinctio at aliquam! Quam minima pariatur corporis maiores repellat, nobis similique dolores beatae quaerat eligendi vitae aut quibusdam ipsam voluptatum voluptatem repellendus asperiores esse, iusto sunt consequuntur harum. Id sint sed sequi atque? Error at distinctio unde voluptas fuga voluptatum ea.</p>
+    </section>
 
-    <!-- <main>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item">
-            
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </main> -->
+    <!-- A PARTID DAQUI ANNA  -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
