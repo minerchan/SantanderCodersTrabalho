@@ -162,3 +162,17 @@ footer li span {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
+
+/* Diego */
+.our-menu-card .our-menu-img-container {
+  border-bottom-left-radius: 3.5rem !important;
+  height: 20rem;
+}
+.our-menu-card img {
+  width: 15rem;
+  transition: 200ms;
+}
+.our-menu-card img:hover {
+  width: 16rem;
+}
+/* Diego */
