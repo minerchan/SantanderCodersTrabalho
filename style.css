@@ -10,7 +10,6 @@
 
 html {
   font-size: 62.5%;
-  /* Isso aqui é para ficar 10px de fonte como referência */
 }
 
 .ourFont {
@@ -35,7 +34,9 @@ body {
   height: calc(100vh - 10.4rem);
 }
 
-/* ANIMAÇÃO DE ABERTURA E FECHAMENTO DO MENU HAMBURGUER */
+.btn-warning {
+  min-width: 10rem !important;
+}
 
 .navbar-toggler {
   border: none !important;
@@ -106,7 +107,7 @@ body {
   width: 2rem !important;
   background-color: #ffbe33;
 }
-/*Gabi*/
+
 .img-size {
   width: 180px;
   height: 180px;
@@ -134,7 +135,6 @@ body {
   transition: transform 0.2s ease-in-out;
 }
 
-/* Octávio */
 .setbg {
   background-color: #222831;
   padding: 9rem 0;
@@ -157,10 +157,6 @@ body {
   margin-left: 10rem;
   margin-top: 2rem;
 }
-
-/* Fim CSS Octávio */
-
-/* A PARTIR DAQUI ANA */
 
 .form-container {
   margin-bottom: 45px;
@@ -292,7 +288,7 @@ footer li span {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 }
-/* Diego */
+
 .our-menu-card .our-menu-img-container {
   border-bottom-left-radius: 3.5rem !important;
   height: 20rem;
@@ -304,4 +300,3 @@ footer li span {
 .our-menu-card img:hover {
   transform: scale(1.1);
 }
-/* Diego */
