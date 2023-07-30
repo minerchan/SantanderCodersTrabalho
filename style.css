@@ -35,10 +35,45 @@ body {
   height: calc(100vh - 10.4rem);
 }
 
-.fixh {
-  height: 8.4rem !important;
+/* ANIMAÇÃO DE ABERTURA E FECHAMENTO DO MENU HAMBURGUER */
+
+.navbar-toggler {
+  border: none !important;
 }
 
+.navbar-toggler span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+  margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: translate(15%, 33%) rotate(-45deg);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: none;
+}
 .fixTop {
   top: 35%;
 }
@@ -50,7 +85,7 @@ body {
   top: 35%;
 }
 
-@media  (min-width: 768px) {
+@media (min-width: 768px) {
   .fixPaddingR {
     padding-right: 50% !important;
   }
@@ -72,16 +107,16 @@ body {
   background-color: #ffbe33;
 }
 /*Gabi*/
-.img-size{
+.img-size {
   width: 180px;
   height: 180px;
   transition: 200ms;
 }
-.img-size:hover{
+.img-size:hover {
   transform: scale(1.1);
-} 
+}
 
-.container-img{
+.container-img {
   width: 190px;
   height: 190px;
   overflow: hidden;
@@ -91,19 +126,25 @@ body {
   font-family: "Dancing Script", cursive;
 }
 
+.carousel-inner {
+  transition: transform 0.2s ease-in-out;
+}
 
+.carousel-inner .carousel-item.slide-transition {
+  transition: transform 0.2s ease-in-out;
+}
 
 /* Octávio */
-.setbg{
-  background-color:#222831;
+.setbg {
+  background-color: #222831;
   padding: 9rem 0;
 }
 
-.fix-img{
+.fix-img {
   width: 44.5rem;
 }
 
-.fix-p{
+.fix-p {
   max-width: 55.5rem;
   font-size: 1.65rem;
 }
@@ -142,7 +183,7 @@ input:-moz-placeholder,
 input::-ms-input-placeholder,
 input:-ms-input-placeholder {
   color: black;
-  font-size: 16px!important;
+  font-size: 16px !important;
 }
 
 .form-button {
